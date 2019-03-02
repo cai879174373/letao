@@ -1,0 +1,88 @@
+//公共代码
+// 1.设置公共颜色
+@main-color:#006699;
+// 2.设置公共样式
+html {
+    font-size: 26.6667vw;
+}
+body{
+    font-size: .14rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+img{
+    vertical-align: middle;
+}
+
+// 头部区域
+#header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color:@main-color;
+    color: #fff;
+    display: flex;
+    .left{
+        line-height: .45rem;
+        text-align: center;
+        width: .45rem;
+        height: .45rem;
+        a{
+            color: #fff; 
+        }
+    }
+    .center{
+        flex: 1;
+        text-align: center;
+        h4{
+            line-height: .45rem;
+            font-weight: normal;
+
+        }
+
+    }
+    .right{
+        line-height: .45rem;
+        text-align: center;
+        width: .45rem;
+        height: .45rem;
+    }
+}
+
+// 主体区域
+
+#main{
+    position: relative;
+    padding: .45rem 0;
+    height:100vh ;
+    .mui-scroll-wrapper{
+        height: 100%;
+        position: relative;
+    }
+}
+//底部区域
+#footer {
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    left:0;
+    background-color:@main-color;
+    
+    a{
+        height: .45rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        span{
+            line-height:1 ;
+        }
+        &.active{
+            color: orange;
+        }
+    }
+}
