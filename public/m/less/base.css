@@ -36,10 +36,16 @@ img {
 #header .center {
   flex: 1;
   text-align: center;
-}
-#header .center h4 {
   line-height: .45rem;
   font-weight: normal;
+}
+#header .center input {
+  font-size: .14rem;
+  margin-bottom: 0;
+  color: #000;
+  text-align: left;
+  border-radius: 0.06rem;
+  height: .34rem;
 }
 #header .right {
   line-height: .45rem;

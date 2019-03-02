@@ -1,12 +1,18 @@
 @import "base.less";
-#header {
-    .center{
-    form,input{
-            font-size:.14rem; 
-            height: .34rem;
-            border-radius: .05rem;
-            border: 0;
-            margin-top:0.03rem; 
+#main{
+    display: flex;
+    .category-left{
+        width: .8rem;
+    }
+    .category-right{
+        flex: 1;
+        a{
+            display: block;
+            text-align: center;
+            background-color: #fff;
+            img{
+                width: 100%;
+            }
         }
     }
 }

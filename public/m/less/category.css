@@ -36,10 +36,16 @@ img {
 #header .center {
   flex: 1;
   text-align: center;
-}
-#header .center h4 {
   line-height: .45rem;
   font-weight: normal;
+}
+#header .center input {
+  font-size: .14rem;
+  margin-bottom: 0;
+  color: #000;
+  text-align: left;
+  border-radius: 0.06rem;
+  height: .34rem;
 }
 #header .right {
   line-height: .45rem;
@@ -77,11 +83,20 @@ img {
 #footer a.active {
   color: orange;
 }
-#header .center form,
-#header .center input {
-  font-size: .14rem;
-  height: .34rem;
-  border-radius: .05rem;
-  border: 0;
-  margin-top: 0.03rem;
+#main {
+  display: flex;
+}
+#main .category-left {
+  width: .8rem;
+}
+#main .category-right {
+  flex: 1;
+}
+#main .category-right a {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+}
+#main .category-right a img {
+  width: 100%;
 }
