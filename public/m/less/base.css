@@ -37,7 +37,10 @@ img {
   flex: 1;
   text-align: center;
   line-height: .45rem;
+}
+#header .center h4 {
   font-weight: normal;
+  line-height: .45rem;
 }
 #header .center input {
   font-size: .14rem;
