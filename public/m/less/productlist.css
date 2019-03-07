@@ -107,3 +107,39 @@ img {
 #footer a.active {
   color: orange;
 }
+#main .product-content .mui-card-header {
+  background-color: #eee;
+  height: .3rem;
+}
+#main .product-content .mui-card-header a {
+  display: block;
+  color: #000;
+  font-size: .14rem;
+}
+#main .product-content .mui-card-header a.active {
+  color: red;
+}
+#main .product-content .mui-card-content {
+  text-align: center;
+  padding: .1rem .05rem;
+}
+#main .product-content .mui-card-content .mui-col-xs-6 {
+  box-shadow: 0 1px 0 #ccc;
+}
+#main .product-content .mui-card-content .mui-col-xs-6:nth-child(odd) {
+  box-shadow: 1px 1px 0 #ccc;
+}
+#main .product-content .mui-card-content .mui-col-xs-6 .product {
+  text-align: center;
+  padding: .1rem .05rem;
+}
+#main .product-content .mui-card-content .mui-col-xs-6 .product .product-img {
+  width: 100%;
+}
+#main .product-content .mui-card-content .mui-col-xs-6 .product .product-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

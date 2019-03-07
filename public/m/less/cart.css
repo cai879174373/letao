@@ -107,3 +107,59 @@ img {
 #footer a.active {
   color: orange;
 }
+#main {
+  padding-bottom: .8rem;
+}
+#main .mui-table-view li a {
+  display: flex;
+}
+#main .mui-table-view li a .left {
+  text-align: center;
+  position: relative;
+  width: .8rem;
+}
+#main .mui-table-view li a .left img {
+  width: 100%;
+}
+#main .mui-table-view li a .left .mui-checkbox {
+  position: static;
+}
+#main .mui-table-view li a .left .mui-checkbox input {
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0rem;
+}
+#main .mui-table-view li a .left .mui-checkbox input:before {
+  color: hotpink;
+}
+#main .mui-table-view li a .right {
+  flex: 1;
+  line-height: .24rem ;
+}
+#main .mui-table-view li a .right .product-price span {
+  color: red;
+  font-weight: 600;
+}
+#main .mui-table-view li a .right .product-price del {
+  color: #888;
+}
+#main .mui-table-view li a .right .product-params {
+  display: flex;
+  justify-content: space-between;
+}
+#main .mui-table-view li a:not(.mui-btn) {
+  white-space: normal;
+}
+#order {
+  position: fixed;
+  bottom: .45rem;
+  height: .35rem;
+  line-height: .35rem ;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#order .left {
+  color: red;
+}

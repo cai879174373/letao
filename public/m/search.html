@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自己写的乐淘移动端搜索页</title>
+    <!-- 引入mui查件的css样式包 -->
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <!-- 引入字体样式fontAwesome的css样式包 -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己写的css样式包 -->
+    <link rel="stylesheet" href="less/search.css">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="left">
+            <a href="index.html" class="fa fa-arrow-left"></a>
+        </div>
+        <div class="center">
+            <h4>搜索中心</h4>
+
+        </div>
+        <div class="right">
+            <!-- 字体图标 -->
+        </div>
+    </header>
+    <!-- 主体区域 -->
+    <main id="main">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
+                <div class="search-commodity">
+                    <input type="text" placeholder="请输入要搜索商品" class="btn-input">
+                    <button type="button" class="mui-btn mui-btn-primary btn-search">搜索</button>
+                </div>
+                <div class="search-history">
+                    <!-- 用mui框架的卡片视图 -->
+                    <div class="title">
+                        <div class="mui-card">
+                            <!--页眉，放置标题-->
+                            <div class="mui-card-header">
+                                <span>搜索历史</span>
+                                <a href="#" class="fa fa-trash btn-clear">清空记录</a>
+                            </div>
+
+
+                            <!-- 内容区域 -->
+                            <div class="mui-card-content">
+                                <ul class="mui-table-view">
+
+
+                                    <li class="mui-table-view-cell">Item 1
+                                        <span class="mui-badge fa fa-close"></span>
+                                    </li>
+                                    <li class="mui-table-view-cell">Item 2
+                                        <span class="mui-badge fa fa-close"></span>
+                                    </li>
+                                    <li class="mui-table-view-cell">Item 3
+                                        <span class="mui-badge fa fa-close"></span>
+                                    </li>
+
+
+                                    <!-- mui的列表插件 -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <-- 尾部区域 -->
+
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3 "><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></div>
+            <div class="mui-col-xs-3"><a href="category.html" class="active"><i class="fa fa-bars"></i><span>分类</span></a></div>
+            <div class="mui-col-xs-3"><a href="cart.html"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></div>
+            <div class="mui-col-xs-3"><a href="user.html"><i class="fa fa-user"></i><span>个人中心</span></a></div>
+        </div>
+    </footer>
+
+
+    <script id="searchTpl" type="text/html">
+        {{if list.length>0}}
+        {{each list value i}}
+    <li class="mui-table-view-cell" data-search="{{value.key}}">{{value.key}}
+            <span class="mui-badge fa fa-close btn-delete"  data-id="{{i}}"></span>
+        </li>
+       
+    {{/each}}
+    {{else}}
+        <li class="mui-table-view-cell">
+           暂时没有搜索记录~
+        </li>
+    {{/if}}
+
+
+</script>
+
+
+    <!-- 引入mui插件的js包 -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 引入zepto的js 发送请求 -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 引入模板插件的js包 -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 引入自己写的js包 -->
+    <script src="js/search.js"></script>
+</body>
+
+</html>

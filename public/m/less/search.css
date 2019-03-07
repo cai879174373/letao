@@ -60,8 +60,27 @@ img {
   color: #fff;
 }
 #main {
+  background-color: #fff;
   padding: .45rem 0;
   height: 100vh ;
+}
+#main .search-commodity {
+  display: flex;
+  padding: .1rem;
+}
+#main .search-commodity input {
+  height: .34rem;
+  margin-bottom: 0;
+  border-color: #006699;
+  font-size: .14rem;
+  border-radius: .06rem 0rem 0rem .06rem;
+}
+#main .search-commodity button {
+  border-color: #006699;
+  background-color: #006699;
+  width: .6rem;
+  height: .34rem;
+  border-radius: 0rem .06rem .06rem 0rem;
 }
 #main .mui-scroll-wrapper {
   height: 100%;
@@ -88,40 +107,36 @@ img {
 #footer a.active {
   color: orange;
 }
-#main a {
-  display: block;
+#main {
+  background-color: #fff;
 }
-#main a img {
-  width: 100%;
-}
-#main .nav {
-  padding: .1rem;
-}
-#main .nav a {
-  display: block;
-}
-#main .nav a img {
-  width: 100%;
-}
-#main .banner {
-  padding: 0rem .1rem;
-}
-#main .banner .left a {
+#main .search-commodity {
   display: flex;
-}
-#main .banner .left a img {
-  width: 50%;
-  height: 1.2rem;
-}
-#main .banner .right a {
-  display: block;
-}
-#main .banner .right a img {
-  height: 2.4rem;
-}
-#main .brand,
-#main .sport,
-#main .woman,
-#main .man {
   padding: .1rem;
+}
+#main .search-commodity input {
+  height: .34rem;
+  margin-bottom: 0;
+  border-color: #006699;
+  font-size: .14rem;
+  border-radius: .06rem 0rem 0rem .06rem;
+}
+#main .search-commodity button {
+  border-color: #006699;
+  background-color: #006699;
+  width: .6rem;
+  height: .34rem;
+  border-radius: 0rem .06rem .06rem 0rem;
+}
+#main .search-history .title {
+  font-size: .14rem;
+}
+#main .search-history .title span {
+  font-size: .14rem;
+}
+#main .search-history .title a {
+  color: #000;
+}
+#main .search-history .title .mui-card-content .mui-table-view-cell:after {
+  left: 0;
 }

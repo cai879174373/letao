@@ -59,16 +59,40 @@ img{
         text-align: center;
         width: .45rem;
         height: .45rem;
+        a{
+            color: #fff; 
+        }
     }
 }
 
 // 主体区域
 
 #main{
-    position: relative;
+    // position: relative; 标准流可以不用设置定位
+
+    background-color: #fff;
+    .search-commodity{
+        display: flex;
+        padding: .1rem;
+        input{
+            height: .34rem;
+            margin-bottom: 0;
+            border-color:  @main-color;
+            font-size: .14rem;
+            border-radius:.06rem 0rem 0rem .06rem;
+        }
+        button{
+            border-color: @main-color;
+            background-color: @main-color;
+            width: .6rem;
+            height: .34rem;
+            border-radius:0rem .06rem .06rem 0rem;
+        }
+    }
     padding: .45rem 0;
     height:100vh ;
     .mui-scroll-wrapper{
+        //插件是绝对定位 父元素的padding没有用  需要设置设置相对定位
         height: 100%;
         position: relative;
     }

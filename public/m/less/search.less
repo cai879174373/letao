@@ -1,0 +1,39 @@
+@import "base.less";
+
+#main {
+    background-color: #fff;
+    .search-commodity{
+        display: flex;
+        padding: .1rem;
+        input{
+            height: .34rem;
+            margin-bottom: 0;
+            border-color:  @main-color;
+            font-size: .14rem;
+            border-radius:.06rem 0rem 0rem .06rem;
+        }
+        button{
+            border-color: @main-color;
+            background-color: @main-color;
+            width: .6rem;
+            height: .34rem;
+            border-radius:0rem .06rem .06rem 0rem;
+        }
+    }
+    .search-history{
+       .title{
+           font-size: .14rem;
+           span{
+            font-size: .14rem;
+           }
+           a{
+               color: #000;
+           }
+           .mui-card-content{
+            .mui-table-view-cell:after{
+                left:0;
+            }
+           }
+       }
+    }
+}

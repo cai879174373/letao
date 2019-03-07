@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自己写的乐淘移动端购物车页面</title>
+    <!-- 引入mui查件的css样式包 -->
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <!-- 引入字体样式fontAwesome的css样式包 -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己写的css样式包 -->
+    <link rel="stylesheet" href="less/cart.css">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="left">
+                <!-- javascript:history.back(); 使用历史记录的返回上一页函数-->
+            <a href="javascript:history.back()" class="fa fa-arrow-left"></a>
+        </div>
+        <div class="center">
+            <h4>购物车</h4>
+
+        </div>
+        <div class="right">
+            <!-- 字体图标 -->
+            <a href="cart.html" class="fa fa-refresh"></a>
+        </div>
+    </header>
+    <!-- 主体区域 -->
+    <main id="main">
+            <div class="mui-scroll-wrapper" id="pullrefresh">
+                    <div class="mui-scroll">
+            <ul class="mui-table-view cart-list">
+                    <li class="mui-table-view-cell">
+                            <div class="mui-slider-right mui-disabled">
+                                    <a class="mui-btn mui-btn-blue">编辑</a>
+                                    <a class="mui-btn mui-btn-red">删除</a>
+                                </div>
+                        <a class="mui-navigate-right mui-slider-handle">
+                            <div class="left">
+                                <img src="images/brand1.png" alt="">
+                                <div class="mui-input-row mui-checkbox mui-left">
+                                        <label></label>
+                                        <input name="checkbox" type="checkbox" checked="">
+                                    </div>
+                        
+
+                            </div>
+                            <div class="right">
+                                    <p class="product-name">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                    <div class="product-price">
+                                            <span>¥499.1</span>
+                                            <del>¥888.1</del>
+                                        </div>
+                                        <div class="product-params">
+                                                <div class="product-size">
+                                                    鞋码： <span>50</span>
+                                                </div>
+                                                <div class="product-num">
+                                                    x<span>1</span>双
+                                                </div>
+                                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right mui-slider-handle">
+                                <div class="left">
+                                        <img src="images/brand1.png" alt="">
+                                        <div class="mui-input-row mui-checkbox mui-left">
+                                                <label></label>
+                                                <input name="checkbox" type="checkbox" checked="">
+                                            </div>
+                                
+        
+                                    </div>
+                                    <div class="right">
+                                            <p class="product-name">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                            <div class="product-price">
+                                                    <span>¥499.1</span>
+                                                    <del>¥888.1</del>
+                                                </div>
+                                                <div class="product-params">
+                                                        <div class="product-size">
+                                                            鞋码： <span>50</span>
+                                                        </div>
+                                                        <div class="product-num">
+                                                            x<span>1</span>双
+                                                        </div>
+                                                    </div>
+                                    </div>
+                        </a>
+                        <div class="mui-slider-right mui-disabled">
+                                <a class="mui-btn mui-btn-blue">编辑</a>
+                                <a class="mui-btn mui-btn-red">删除</a>
+                            </div>
+                    </li>
+                    <li class="mui-table-view-cell">
+                            <div class="mui-slider-right mui-disabled">
+                                    <a class="mui-btn mui-btn-blue">编辑</a>
+                                    <a class="mui-btn mui-btn-red">删除</a>
+                                </div>
+                        <a class="mui-navigate-right mui-slider-handle">
+                                <div class="left">
+                                        <img src="images/brand1.png" alt="">
+                                        <div class="mui-input-row mui-checkbox mui-left">
+                                                <label></label>
+                                                <input name="checkbox" type="checkbox" checked="">
+                                            </div>
+                                
+        
+                                    </div>
+                                    <div class="right">
+                                            <p class="product-name">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                            <div class="product-price">
+                                                    <span>¥499.1</span>
+                                                    <del>¥888.1</del>
+                                                </div>
+                                                <div class="product-params">
+                                                        <div class="product-size">
+                                                            鞋码： <span>50</span>
+                                                        </div>
+                                                        <div class="product-num">
+                                                            x<span>1</span>双
+                                                        </div>
+                                                    </div>
+                                    </div>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
+
+
+
+    </main>
+    <div id="order">
+        <div class="left">
+            订单总额： ￥<span>0.00</span>
+        </div>
+         <button type="button" class="mui-btn mui-btn-danger">生产订单</button>
+       
+    </div>
+    <!-- 尾部区域 -->
+
+    <footer id="footer">
+            <div class="mui-row">
+                    <div class="mui-col-xs-3 "><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></div>
+                    <div class="mui-col-xs-3"><a href="category.html" ><i class="fa fa-bars"></i><span>分类</span></a></div>
+                    <div class="mui-col-xs-3"><a href="cart.html" class="active"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></div>
+                    <div class="mui-col-xs-3"><a href="user.html"><i class="fa fa-user"></i><span>个人中心</span></a></div>
+                </div>
+    </footer>
+
+    <!-- 生成模板 -->
+
+    <script id="cartTpl" type="text/html">
+        {{if data.length>0}}
+    {{each data value i}}
+    <li class="mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                    <a class="mui-btn mui-btn-blue btn-update" data-updata="{{value}}">编辑</a>
+                    <a class="mui-btn mui-btn-red btn-delete" data-id="{{value.id}}" >删除</a>
+                </div>
+        <a class="mui-navigate-right mui-slider-handle">
+            <div class="left">
+                <img src="{{value.pic[0].picAddr}}" alt="">
+                <div class=" mui-checkbox ">
+                        <!-- <label></label> -->
+                        <input class="checkbox-product" name="checkbox" type="checkbox" data-price="{{value.price}}"  data-num="{{value.num}}">
+                    </div>
+        
+
+            </div>
+            <div class="right">
+                    <p class="product-name">{{value.proName}}</p>
+                    <div class="product-price" >
+                            <span>{{value.price}}</span>
+                            <del>{{value.oldPrice}}</del>
+                        </div>
+                        <div class="product-params">
+                                <div class="product-size">
+                                    鞋码： <span>{{value.size}}</span>
+                                </div>
+                                <div class="product-num" >
+                                    x<span>{{value.num}}</span>双
+                                </div>
+                            </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+    {{else}}
+    <h2>你的购物车空空如也</h2>
+   
+    {{/if}}
+    </script>
+
+
+
+    <!-- 引入mui插件的js包 -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 引入zepto的js 发送请求 -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 引入模板插件的js包 -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 引入自己写的js包 -->
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
