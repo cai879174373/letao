@@ -4,9 +4,18 @@ $(function(){
 
     // 发送ajax请求 请求分页数据
     $.ajax({
+        beforeSend: function () {
+            //ajax请求之前
+            $('#main .mask').show();
+                     },
+        complete: function () {
+                    //ajax请求完成，不管成功失败
+             $('#main .mask').hide();
+            },             
         url:'/category/queryTopCategory',
         success:function(data){
             console.log(data);
+            
             //调用模板引擎
             var html=template('categoryLeftTpl',data);
             // 渲染到页面上
@@ -35,6 +44,14 @@ $(function(){
     })
     function qureySecondCategory(id){
         $.ajax({
+            beforeSend: function () {
+                //ajax请求之前
+                $('#main .mask').show();
+                         },
+            complete: function () {
+                        //ajax请求完成，不管成功失败
+                 $('#main .mask').hide();
+                },           
             url:'/category/querySecondCategory',
             data:{id:id},
             success:function(data){

@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+}
+#main {
+  height: 100%;
+  display: flex;
+}
+#main .left {
+  width: 200px;
+  height: 100%;
+  background-color: skyblue;
+}
+#main .left .title {
+  padding: 30px;
+  text-align: center;
+}
+#main .left .title img {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px hotpink;
+}
+#main .left .title p {
+  margin-top: 10px;
+}
+#main .left .list-group a {
+  background-color: skyblue;
+  border: 0;
+}
+#main .left .list-group a.active {
+  background-color: hotpink;
+  border-color: hotpink;
+}
+#main .left .list-group a:hover {
+  background-color: hotpink;
+}
+#main .left #collapseExample {
+  padding-left: 20px;
+}
+#main .right {
+  flex: 1;
+}
+#main .right .title {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#main .right .title a {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+}
+#main .right .title a.fa-navicon {
+  background-color: yellowgreen;
+  color: #fff;
+}
+#main .right .title a.fa-sign-out {
+  width: 80px;
+  height: 40px;
+  text-decoration: none;
+}
+#main .right .content {
+  background-color: #eee;
+  padding: 20px;
+}
+#main .right .content .table {
+  background-color: #fff;
+}
+#main .right .content .table tr,
+#main .right .content .table th {
+  text-align: center;
+  line-height: 40px;
+}
+#main .right .content .table img {
+  width: 165px;
+  height: 85px;
+}
+#main .right .content .modal-body .form-group {
+  padding: 20px 0;
+}
+#main .right .content .modal-body .form-group .brand-name select {
+  width: 100%;
+}
+#main .right .content .modal-body img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0px auto;
+}

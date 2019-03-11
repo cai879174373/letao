@@ -19,7 +19,7 @@
     <header id="header">
         <div class="left">
                 <!-- javascript:history.back(); 使用历史记录的返回上一页函数-->
-            <a href="javascript:history.back()" class="fa fa-arrow-left"></a>
+            <i  class="fa fa-arrow-left"></i>
         </div>
         <div class="center">
             <h4>购物车</h4>
@@ -173,7 +173,7 @@
                 <img src="{{value.pic[0].picAddr}}" alt="">
                 <div class=" mui-checkbox ">
                         <!-- <label></label> -->
-                        <input class="checkbox-product" name="checkbox" type="checkbox" data-price="{{value.price}}"  data-num="{{value.num}}">
+                        <input checked class="checkbox-product" name="checkbox" type="checkbox" data-price="{{value.price}}"  data-num="{{value.num}}">
                     </div>
         
 
@@ -203,6 +203,35 @@
     </script>
 
 
+    <!-- 生产编辑页面模板引擎 -->
+
+    <script id="compileCartTpl" type="text/html">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell detail-size">
+                <!-- 按扭使用mui插件 -->
+                尺寸: 
+                <span>
+                    {{each productSize value i}}
+                        <button type="button" class="mui-btn {{value==size?'mui-btn-warning':''}}" data-size="{{value}}">{{value}}</button>
+                     {{/each}}   
+                        
+                </span>
+                
+
+            </li>
+            <li class="mui-table-view-cell detail-num">
+                <!-- 数量使用mui数字输入框插件 -->
+                数量: <div class="mui-numbox" data-numbox-step='1' data-numbox-min='1' data-numbox-max='{{productNum}}'>
+                        <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                        <input class="mui-numbox-input" type="number" value="{{num}}" />
+                        <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+                      </div>
+                      剩余: {{productNum}}件
+            </li>
+        </ul>
+    </script>
+
+
 
     <!-- 引入mui插件的js包 -->
     <script src="lib/mui/js/mui.js"></script>
@@ -210,6 +239,8 @@
     <script src="lib/zepto/zepto.min.js"></script>
     <!-- 引入模板插件的js包 -->
     <script src="lib/artTemplate/template-web.js"></script>
+     <!-- 引入公共的js -->
+     <script src="js/common.js"></script>
     <!-- 引入自己写的js包 -->
     <script src="js/cart.js"></script>
 </body>

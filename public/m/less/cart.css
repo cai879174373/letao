@@ -163,3 +163,12 @@ img {
 #order .left {
   color: red;
 }
+.mui-popup-inner {
+  padding: 0.15rem 0;
+}
+.mui-popup-inner .detail-size {
+  line-height: .33rem ;
+}
+.mui-popup-inner .detail-size .mui-btn {
+  margin-bottom: .05rem;
+}

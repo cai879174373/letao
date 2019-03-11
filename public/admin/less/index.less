@@ -1,0 +1,132 @@
+html,
+body {
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    display: flex;
+
+    .left {
+        width: 200px;
+        height: 100%;
+        background-color: skyblue;
+
+        .title {
+            padding: 30px;
+            text-align: center;
+
+            img {
+                width: 120px;
+                height: 120px;
+                border: 10px solid #fff;
+                border-radius: 50%;
+                box-shadow: 0 0 5px hotpink;
+            }
+
+            p {
+                margin-top: 10px;
+
+            }
+        }
+
+        .list-group {
+            a {
+                background-color: skyblue;
+                border: 0;
+
+                &.active {
+                    background-color: hotpink;
+                    border-color: hotpink;
+
+                }
+
+                &:hover {
+                    background-color: hotpink;
+                }
+            }
+        }
+
+        #collapseExample {
+            padding-left: 20px;
+        }
+    }
+
+    .right {
+        flex: 1;
+
+        .title {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                font-size: 20px;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 40px;
+                text-decoration: none;
+
+                &.fa-navicon {
+
+                    background-color: yellowgreen;
+                    color: #fff;
+
+                }
+
+                &.fa-sign-out {
+                    width: 80px;
+                    height: 40px;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        .content {
+            background-color: #eee;
+            padding: 20px;
+
+            .table {
+                background-color: #fff;
+
+                // line-height: 40px;
+                tr,
+                th {
+                    text-align: center;
+                    line-height: 40px;
+                }
+
+                img {
+                    width: 165px;
+                    height: 85px;
+                }
+            }
+
+            .modal-body {
+                .form-group {
+
+                    padding: 20px 0;
+
+                    .brand-name {
+                        select {
+
+                            width: 100%;
+
+                        }
+                    }
+                }
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    display: block;
+                    margin: 0px auto;
+                }
+            }
+        }
+
+
+    }
+}
